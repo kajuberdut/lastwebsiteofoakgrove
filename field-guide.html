@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Field Guide to Oak Grove</title>
+    <style>
+        /* ------------------------------------
+       BASIC BODY & TYPOGRAPHY
+    ------------------------------------- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+
+        /* ------------------------------------
+       HEADER
+    ------------------------------------- */
+        header {
+            background: url('/images/Header.webp') center/cover no-repeat;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            margin: 1rem 0 0;
+        }
+
+        /* ------------------------------------
+       NAVIGATION BAR
+    ------------------------------------- */
+        nav {
+            background-color: #2c3e50;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-logo {
+            color: #ecf0f1;
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            background: #34495e;
+        }
+
+        /* ------------------------------------
+       MAIN CONTENT
+    ------------------------------------- */
+        .field-guide-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .field-guide-intro {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .field-guide-intro h2 {
+            margin-top: 0;
+            font-size: 1.75rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .field-guide-intro p {
+            font-size: 1rem;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Grid layout for card-like entries */
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .guide-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .guide-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .guide-card h3 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-card p {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        /* ------------------------------------
+       FOOTER
+    ------------------------------------- */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #34495e;
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Oak Grove Field Guide</h1>
+        <p>Explore the Wonders and Secrets of This Enchanted Town</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="index.html" class="nav-logo">Oak Grove</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="field-guide.html">Field Guide</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN FIELD GUIDE CONTENT -->
+    <div class="field-guide-container">
+
+        <!-- Intro Section -->
+        <section class="field-guide-intro">
+            <h2>Welcome to the Field Guide</h2>
+            <p>
+                Here you'll find an organized look at the magical customs, creatures, and artifacts
+                that make Oak Grove such a unique crossroads between the ordinary and the otherworldly.
+                Whether you're an aspiring wizard, a curious hedge mage, or just a traveler passing
+                through, these entries will help you understand the hidden aspects of life beyond
+                the fence.
+            </p>
+        </section>
+
+        <!-- Grid of Guide Cards -->
+        <section class="guide-grid">
+
+            <!-- Academic Magic Card -->
+            <div class="guide-card">
+                <img src="/images/academic-magic.webp"
+                    alt="An open grimoire or textbook illuminated by a lantern, with swirling runic symbols hovering above the pages and nearby academic tools.">
+                <h3>Academic Magic</h3>
+                <p>
+                    This structured form of wizardry relies on master spells, careful study,
+                    and disciplined practice. From runic diagrams to meticulously memorized incantations,
+                    Academic Magic forms the backbone of any formal wizard’s education.
+                </p>
+            </div>
+
+            <!-- Natural Magic Card -->
+            <div class="guide-card">
+                <img src="/images/natural-magic.webp"
+                    alt="A silhouette of a figure in a forest clearing at dusk, with tree roots lightly wrapped around their legs, glowing motes in the air.">
+                <h3>Natural Magic</h3>
+                <p>
+                    Tied to the essence of living things, Natural Magic involves aligning one's own nature
+                    with the energies at play. Whether tapping into the rhythms of the forest or
+                    melding with the spirit of a raging storm, practitioners approach problems
+                    by becoming part of the solution itself.
+                </p>
+            </div>
+
+            <!-- The Fae Card -->
+            <div class="guide-card">
+                <img src="/images/fae.webp"
+                    alt="A regal Fae court scene in a twilight forest, featuring King Oberon and varied Fae creatures with glowing eyes and flowers.">
+                <h3>The Fae</h3>
+                <p>
+                    Mysterious beings who inhabit the Thinning, the Fae are as varied as they are ancient.
+                    Led by King Oberon, they range from mischievous sprites and ascendant animals
+                    to the imposing High Fae who guard the very fabric of their hidden realm.
+                </p>
+            </div>
+
+            <!-- Gremlins / Minor Creatures Card -->
+            <div class="guide-card">
+                <img src="/images/creatures.webp"
+                    alt="A collage of minor creatures: mischievous gremlins, glowing changeling silhouettes, and whimsical fae critters.">
+                <h3>Creatures & Critters</h3>
+                <p>
+                    Beyond the High Fae, Oak Grove is home to an array of lesser-known entities—gremlins,
+                    changelings, and other oddities that slip through cracks in the barrier.
+                    Though smaller in stature, they can cause outsized mischief if left unchecked.
+                </p>
+            </div>
+
+            <!-- Artifacts & Tools Card -->
+            <div class="guide-card">
+                <img src="/images/artifacts-tools.webp"
+                    alt="A rustic workbench strewn with magical tools: Morgan's hammer with arcane engravings and various enchanted items.">
+                <h3>Artifacts & Tools</h3>
+                <p>
+                    From intricately carved staffs to personal foci like Morgan’s hammer,
+                    artifacts are essential for harnessing magic. These items often bear
+                    generations of stories, and losing one can break a wizard’s link to their craft.
+                </p>
+            </div>
+
+            <!-- Law of Forgetting Card -->
+            <div class="guide-card">
+                <img src="/images/law-of-forgetting.webp"
+                    alt="A magical scene fading from memory: shimmering lights being forgotten, symbolizing erased memories.">
+                <h3>The Law of Forgetting</h3>
+                <p>
+                    Central to the hidden world of Oak Grove, this mystical rule ensures
+                    that magic cannot persist in the minds of those who refuse to believe.
+                    Observers quickly dismiss enchanting events as tricks of light,
+                    mass hysteria, or misremembered accidents.
+                </p>
+            </div>
+
+        </section>
+
+    </div><!-- /field-guide-container -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Patrick R. Shechet. All rights reserved. No license granted.
+            Unauthorized use, reproduction, or distribution of any portion of this site is
+            strictly prohibited.
+        </p>
+    </footer>
+
+</body>
+
+</html>
