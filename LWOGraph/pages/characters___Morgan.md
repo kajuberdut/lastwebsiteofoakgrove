@@ -1,0 +1,7 @@
+- Motivation: Morgan is driven by her father's dying wish to protect Oak Grove and the responsibility she feels to shield her loved ones from the dangers of the Fae.
+- Goal: To maintain the magical barrier between Oak Grove and the thinning while discovering her own magical strengths and preparing for the looming threat.
+- Conflict: Morgan struggles with self-doubt, her incomplete magical training, and the emotional burden of her father's death, which both strengthens and limits her magic.
+- One Sentence Summary:Morgan is the last wizard of Oak Grove, trained by her father to defend the town from the thinning, balancing her grief and growing magical power.
+-
+- [[notes/morgan and evelyn]]
+-
